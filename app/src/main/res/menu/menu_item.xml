@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="movie"
+        android:id="@+id/movie"
+        android:icon="@drawable/ic_local_movies_black_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="Most Popular"
+                android:id="@+id/most_popular"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="Upcoming Movies"
+                android:id="@+id/upcoming_movies"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="Latest Movies"
+                android:id="@+id/latest_movies"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="Now Playing"
+                android:id="@+id/now_playing"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="Top Rated"
+                android:id="@+id/top_rated"
+                app:showAsAction="never"
+                >
+            </item>
+
+        </menu>
+
+    </item>
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:title="My Favorites"
+                android:id="@+id/my_favorites"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="My Watchlist"
+                android:id="@+id/my_watchlist"
+                app:showAsAction="never"
+                >
+            </item>
+            <item
+                android:title="Refresh"
+                android:id="@+id/refresh"
+                app:showAsAction="never"
+                >
+            </item>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:id="@+id/relative"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/perple">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imagemovie"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/movie" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imagemovie"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/imagemovie"
+                android:text="Movie Title"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/title"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="6dp"
+                android:text="Released On :"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/popularity"
+                android:layout_toEndOf="@+id/popularity"
+                android:visibility="visible"
+                android:rating="5"
+                android:numStars="5"
+                />
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignEnd="@+id/ratingBar2"
+                android:text="03/08/2017"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="6dp"
+                android:text="Popularity :"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingbar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/popularity"
+                android:layout_marginBottom="10dp"
+                android:isIndicator="false"
+                android:numStars="1"
+                android:rating="1"
+                />
+
+            <TextView
+                android:id="@+id/voteavg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
+                android:text="(8.7)"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/ratingbar3"
+                android:layout_toEndOf="@+id/popularity" />
+
+            <TextView
+                android:id="@+id/users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/voteavg"
+                android:layout_alignBottom="@+id/voteavg"
+                android:layout_toEndOf="@+id/voteavg"
+                android:text="1089"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
